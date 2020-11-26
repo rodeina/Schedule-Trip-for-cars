@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projectforcars">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_car_round"
+        android:label="Fahrplan für Autos"
+        android:roundIcon="@mipmap/ic_logo_car_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projectforcars"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ForgetPasswordActivity"></activity>
+        <activity android:name=".AddInfoCarActivity" />
+        <activity android:name=".InfoCarActivity" />
+        <activity
+            android:name=".CarsActivity"
+            android:label="@string/title_activity_cars"
+            android:theme="@style/Theme.Projectforcars.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Registrieren" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Fahrplan für Autos ">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
